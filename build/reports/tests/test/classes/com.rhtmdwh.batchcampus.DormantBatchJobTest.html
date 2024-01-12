@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DormantBatchJobTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DormantBatchJobTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.rhtmdwh.batchcampus.html">com.rhtmdwh.batchcampus</a> &gt; DormantBatchJobTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.607s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">배치가 실패하면 배치 스테이터스는 FAILED를 반환해야한다.</td>
+<td class="success">test()</td>
+<td class="success">0.181s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">로그인 시간이 1년을 경과한 고객이 세명이고, 일년 이내에 로그인한 고객이 다섯명이면 3명의 고객이 휴면 전환 대상자이다.</td>
+<td class="success">test1()</td>
+<td class="success">0.186s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">고객이 열명이 있지만 모두 다 휴면전환대상이면(1년 경과한사람) 휴면 전환 대상은 10명이다</td>
+<td class="success">test2()</td>
+<td class="success">0.150s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">고객이 없는 경우에도 배치는 정상동작 해야한다.</td>
+<td class="success">test3()</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">358일 전에 로그인한 고객에게 휴면계정 예정자라고 메일을 발송해야 한다.</td>
+<td class="success">test5()</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-01-12T16:34:04.486+09:00  INFO 15873 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.rhtmdwh.batchcampus.DormantBatchJobTest]: DormantBatchJobTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-12T16:34:04.492+09:00  INFO 15873 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.rhtmdwh.batchcampus.BatchCampusApplication for test class com.rhtmdwh.batchcampus.DormantBatchJobTest
+2024-01-12T16:34:04.849+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 588511e5-23c6-400e-908b-178c48b6f249test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.860+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : c481fa66-0e2c-4f5d-b147-0439c5fac38etest@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.867+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : a1fb4ab5-eaef-47ed-865c-d01c7cc8f59btest@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.975+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : c69ca228-bcd1-4773-a58f-9d55e451fdd2test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.982+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : f0dbc197-8988-4bf1-b365-83a3eadf1de8test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.987+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : c921c441-fe87-448a-8a49-d9cccc942b03test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:04.995+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 387a1661-e994-474d-8fdc-17d71c1c787ctest@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.000+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : ddaa09c5-9110-497e-9866-716dc6bf7d34test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.006+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : e6d92226-c78a-460a-bc60-82fde50f95a6test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.014+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 26609754-8e92-4dc7-a11c-8a85bd98dbd4test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.019+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 13ab09b7-73ab-41d8-92e4-4a9fb5f1e8c3test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.025+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 0dbf4b07-e413-4f3c-adb8-6b51b2e168a1test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.031+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 4e8755f3-7716-479c-b619-88b9c841ea76test@naver.com email 전송 완료! 휴면 전환 안내메일입니다. 휴면전환 되었습니다.
+2024-01-12T16:34:05.096+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : a99ec096-6fc5-49c8-a597-3fb85cb8cdf1test@naver.com email 전송 완료! 곧 휴면 계정으로 전환됩니다. 휴면 계정으로 허용되기를 원치 않으신다면 1주일 내에 로그인을 해주세요.
+2024-01-12T16:34:05.099+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 8ee0230c-d622-4ca3-be46-db8d0858e9d8test@naver.com email 전송 완료! 곧 휴면 계정으로 전환됩니다. 휴면 계정으로 허용되기를 원치 않으신다면 1주일 내에 로그인을 해주세요.
+2024-01-12T16:34:05.101+09:00  INFO 15873 --- [    Test worker] c.r.batchcampus.EmailProvider$Fake       : 0e8b85c0-c3de-4e1d-8e55-cd1595bb6569test@naver.com email 전송 완료! 곧 휴면 계정으로 전환됩니다. 휴면 계정으로 허용되기를 원치 않으신다면 1주일 내에 로그인을 해주세요.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 1. 12. 오후 4:34:05</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.rhtmdwh.batchcampus.application.dormant.PreDormantBatchItemProcessorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-12T07:34:05" hostname="goseungjos-Mac-mini.local" time="0.011">
+  <properties/>
+  <testcase name="로그인 날짜가 오늘부터 358일 전이면 customer 를 반환애햐한다." classname="com.rhtmdwh.batchcampus.application.dormant.PreDormantBatchItemProcessorTest" time="0.006"/>
+  <testcase name="로그인 날짜가 오늘부터 358일 전이아니면 null를 반환애햐한다." classname="com.rhtmdwh.batchcampus.application.dormant.PreDormantBatchItemProcessorTest" time="0.003"/>
+  <system-out><![CDATA[2024-01-12T16:34:05.151+09:00  INFO 15873 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.rhtmdwh.batchcampus.application.dormant.PreDormantBatchItemProcessorTest]: PreDormantBatchItemProcessorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-12T16:34:05.187+09:00  INFO 15873 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.rhtmdwh.batchcampus.BatchCampusApplication for test class com.rhtmdwh.batchcampus.application.dormant.PreDormantBatchItemProcessorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
